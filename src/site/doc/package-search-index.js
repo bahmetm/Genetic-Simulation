@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"codes.bahmet.genetic_simulation.main.model"},{"l":"codes.bahmet.genetic_simulation.main.model.cell"},{"l":"codes.bahmet.genetic_simulation.main.model.cell.edible"}];updateSearchResults();
