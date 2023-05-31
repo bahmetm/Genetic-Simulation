@@ -21,6 +21,7 @@ public class MainApp extends Application {
         primaryStage.setScene(startScene);
         primaryStage.setMinWidth(1280);
         primaryStage.setMinHeight(720);
+        primaryStage.setTitle("Genetic Simulation");
         primaryStage.show();
     }
 }
