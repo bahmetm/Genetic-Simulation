@@ -5,6 +5,7 @@
 A project to simulate the behavior and evolution of bots controlled by their own DNA
 
 ## How to run
+**! YOU NEED JAVA 20 !**
 
 ### First method:
 To run project you simply need to execute command
