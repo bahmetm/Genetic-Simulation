@@ -42,6 +42,7 @@ public class Field implements Runnable {
     private int currentFoodCount;
     private int currentPoisonCount;
     private int currentGenerationNumber;
+    private boolean stopWork = false;
 
     public static Logger logger = Logger.getLogger(Field.class.getName());
     static {
@@ -563,6 +564,9 @@ public class Field implements Runnable {
                     throw new RuntimeException(e);
                 }
             }
+            if (stopWork) {
+                break;
+            }
         }
     }
 
@@ -706,5 +710,9 @@ public class Field implements Runnable {
             }
         }
         return generationResults.equals(field.generationResults);
+    }
+
+    public void setStopWork(boolean stopWork) {
+        this.stopWork = stopWork;
     }
 }

@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 public class SimulationController {
     private SimulationView view;
     private Stage stage;
+
     Timer timer;
     public static Logger logger = Logger.getLogger(SimulationController.class.getName());
     static {
@@ -88,6 +89,8 @@ public class SimulationController {
      */
     private void onExitButtonClick() {
         logger.log(Level.INFO, "Exit button clicked");
+
+        view.getFieldView().getField().setStopWork(true);
         stage.close();
     }
 
